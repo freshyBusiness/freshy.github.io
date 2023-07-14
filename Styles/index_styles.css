@@ -1,0 +1,218 @@
+/* Styles for the picture banner */
+
+.pic-banner-wrapper {
+    background-attachment: fixed;
+    background-position: 0px -30px;
+    background-repeat: no-repeat;
+    background-image:linear-gradient(180deg,rgba(0,0,0,.45) 0,rgba(0,0,0,.5) 100%),url("../Images/washed-car.jpg");
+    background-size: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}  
+
+.pic-banner-wrapper > .head{
+    font-weight: 900;
+    color: aliceblue;
+    letter-spacing: 1px;
+    font-size: 240%;
+
+}
+
+.pic-banner-wrapper > .book {
+    text-decoration: none;
+    color: #003d50;
+    font-size: 25px;
+    padding: 6px 10px 8px 10px;
+    background-color: cadetblue;   
+    border-radius: 5px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    transition: 1s;
+    box-shadow: 2px 2px 15px 0px rgba(0,80,96,0.52);
+}
+
+.pic-banner-wrapper > .book:hover {
+    color: aliceblue;
+}
+
+.pic-banner-wrapper > .desc {
+    font-weight: 200;
+    font-size: 20px;
+    color: aliceblue;
+    letter-spacing: .7px;
+    
+}
+
+
+/* Styles for the "why us" element */
+
+.yus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3262a0;
+    padding: 5px;
+ 
+}
+
+.yus > .head {
+    font-weight: 900;
+    font-size: 45px;
+    color: aliceblue;
+    letter-spacing: 1px;
+    padding: 40px;
+    text-shadow: 2px 2px 6px #333;
+}
+
+.yus > .reasons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 700;
+    color: aliceblue;
+    font-size: 27px;
+    text-align: center;
+    padding: 15px;
+}
+
+.yus > .reasons > .reason {
+    width: 270px;
+    padding: 5px;
+}
+
+.yus > .reasons > .reason > .head {
+    padding: 15px;
+}
+
+.yus > .reasons > .reason > .txt {
+    font-weight: 200;
+    font-size: 19px;
+    text-align: center;
+    line-height: 25px ;
+}
+
+.yus > .reasons > .reason > #icon {
+    font-size: 35px;
+}
+
+/* About Us */
+
+.abtus-wrapper {
+    background-color: #008070;
+}
+
+.abtus-wrapper > .head {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 900;
+    color: aliceblue;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+.abtus-wrapper > .content-wrapper {
+    display: flex;
+}
+
+.abtus-wrapper > .content-wrapper img {
+    width: 40%;
+    height: auto;
+    margin: 30px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #004030;
+    border-radius: 7px;
+}
+
+.abtus-wrapper > .content-wrapper div{
+    padding-top: 30px;
+    padding-left: 75px;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 20px;
+}
+
+
+
+/* gallery styles */
+.gallery-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    height: auto;
+    background-color: #4e7694;
+    padding-bottom: 125px;
+    z-index: -1;
+    box-shadow: inset 0px 0px 30px -5px rgba(0,0,0,0.7);
+
+}
+
+.gallery-wrapper > .head {
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 35px;
+    font-weight: 900;
+    color: aliceblue;
+    
+}
+
+
+.gallery-wrapper > .content-wrapper{
+    max-width: 75%;
+    margin: 30px 0px;
+    position: relative;
+    justify-self: center;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 5px;
+    border-color: #2e5674;
+
+}
+
+.my-slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #2e5674;
+}
+
+.my-slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    
+}
+
+.prev, .next {
+    position: absolute;
+    cursor: pointer;
+    top: 45%;
+
+    padding: 16px 12px;
+    color: aliceblue;
+    font-size: 18px;
+    border-radius: 0 50% 50% 0;
+    transition: .6s ease-in;
+    user-select: none;
+    z-index: 1;
+    background-color: rgba(0,0,0,.20);
+}
+
+.next {
+    right: 0;
+    border-radius: 50% 0 0 50%;
+    
+
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,.75);
+}
+
+
+
+
+
